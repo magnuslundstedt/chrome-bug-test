@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+1) See console for network traffic, note the REST-request for a timestamp. 
+
+<script>
+var xmlhttp;
+xmlhttp=new XMLHttpRequest();
+
+xmlhttp.open("GET","http://localhost:2048/timestamp/",true); // +'?now='+Date.now()
+xmlhttp.send();
+</script>
+
+<p>
+2) <a href="somewhere.html">Navigate somewhere from this page</a>
+
+<p>
+3) Use "go back" button.
+
+<p>
+4) Notice the "Status code": <br>
+- <b>200 OK</b> on Chrome <u>44.0.2403.130 (64-bit)</u> <br>
+- <b>200 OK (from cache)</b> on <u>Chrome 44.0.2403.155 (64-bit)</u> or newer (Canary) <br>
+
+</body>
+</html>
